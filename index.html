@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <main>
+        <section>
+            <h1>Conversor de moedas</h1>
+
+            <div class="row-input-coin">
+                <label for="amount">Informe o valor</label>
+                <div class="coluna-input-coin">
+                    <input type="number" id="amount" placeholder="Ex. 100">
+                    <select id="fromCountrySelect">
+                        <option value="entrada">...</option>
+                    </select>
+                </div>
+            </div>
+          
+            <button id="changeOrderBtn"><img src="/troca.png" alt=""></button>
+          
+            <div class="row-input-coin">
+                <label for="result">Resultado</label>
+                <div class="coluna-input-coin">
+                    <input type="text" id="result" readonly>
+                    <select id="toCountrySelect">
+                    <option value="entrada">...</option>
+                    </select>
+                </div>
+            </div>
+          
+            <button id="convertBtn">Converter</button>
+        </section>
+    </main>
+    
+    <script src="/index.js"></script>
+</body>
+</html>
